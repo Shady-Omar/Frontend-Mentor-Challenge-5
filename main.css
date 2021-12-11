@@ -1,0 +1,182 @@
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+    padding: 0px;
+    height: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 9px;
+}
+
+.container .sedan {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 40px;
+    width: 169px;
+    height: 320px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    position: relative;
+}
+
+.container .sedan p {
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.container .sedan button {
+    position: absolute;
+    bottom: 35px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(31, 77%, 52%);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .sedan button:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.container .suv {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 40px;
+    width: 169px;
+    height: 320px;
+}
+
+.container .suv p {
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+.container .suv button {
+    position: absolute;
+    bottom: 35px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(184, 100%, 22%);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .suv button:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.container .luxury {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 40px;
+    width: 169px;
+    height: 320px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.container .luxury p {
+    font-size: 12px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.container .luxury button {
+    position: absolute;
+    bottom: 35px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    color: hsl(179, 100%, 13%);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .luxury button:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40rem;
+    }
+
+    .container .sedan {
+        width: 180px;
+        height: 300px;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        border-bottom-left-radius: 0px;
+    }
+    .container .suv {
+        width: 180px;
+        height: 300px;
+    }
+
+    .container .suv button {
+        position: absolute;
+        bottom: 36%;
+    }
+
+    .container .luxury {
+        width: 180px;
+        height: 300px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 9px;
+        border-bottom-left-radius: 9px;
+    }
+}
